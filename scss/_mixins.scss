@@ -1,0 +1,87 @@
+// *** BREAKPOINTS MIXINS *** //
+
+    // * Bootstrap's Breakpoint * //
+    @mixin mq-bootstrap-medium {
+        @media only screen and (max-width : 992px) {
+            @content;
+        }
+    }
+
+    @mixin mq-bootstrap-large {
+        @media only screen and (min-width : 993px) {
+            @content;
+        }
+    }
+
+    // * Large Device Breakpoint * //
+    @mixin mq-mediumlarge-up {
+        @media only screen and (max-width: 1280px) and (min-width: 1024px) {
+            @content;
+        }
+    }
+
+    @mixin mq-large-tab {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @mixin mq-medium-tab {
+        @media only screen and (max-width: 1024px) and (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @mixin mq-medium {
+        @media only screen and (max-width: 1023px) and (min-width: 768px) {
+            @content;
+        }
+    }
+
+    // * Medium Mobile Device Breakpoint * //
+    @mixin mq-medium-up {
+        @media only screen and (min-width: 1024px) {
+            @content;
+        }
+    }
+
+    @mixin mq-medium-only {
+        @media only screen and (max-width: 1023px) {
+            @content;
+        }
+    }
+
+    // * Small Mobile Device Breakpoint * //
+    @mixin mq-small-up {
+        @media only screen and (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @mixin mq-small-only {
+        @media only screen and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @mixin mq-small-notebook {
+        @media only screen and (max-height: 750px) {
+            @content;
+        }
+    }
+
+    @mixin mq-landscape {
+        @media screen and (orientation:landscape) {
+            @content;
+        }
+    }
+
+// *** OTHER MIXINS *** //
+
+@mixin clearfix {
+    &:after {
+        content:"";
+        display:block;
+        clear:both;
+    }
+}
