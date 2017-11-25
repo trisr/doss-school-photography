@@ -73,4 +73,12 @@
     padding-left: 15px;
     padding-top: 20px; }
 
+footer {
+  background: orange;
+  text-align: center;
+  color: white;
+  padding: 20px; }
+  footer h5 {
+    margin: 0; }
+
 /*# sourceMappingURL=style.css.map */
