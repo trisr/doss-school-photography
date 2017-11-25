@@ -69,7 +69,6 @@
     text-transform: uppercase;
     margin-top: -67px;
 
-
     span {
       background: white;
       padding: 5px;
@@ -88,5 +87,26 @@
     .caption {
       text-align: center;
     }
+  }
+}
+
+#classes {
+  border-top: 3px solid orange;
+  padding: 50px 0;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -67px;
+
+    span {
+      background: white;
+      padding: 5px;
+    }
+  }
+
+  ol {
+    padding-left: 15px;
+    padding-top: 20px;
   }
 }

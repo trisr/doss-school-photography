@@ -59,4 +59,18 @@
     #instructors .thumbnail .caption {
       text-align: center; }
 
+#classes {
+  border-top: 3px solid orange;
+  padding: 50px 0; }
+  #classes h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -67px; }
+    #classes h2 span {
+      background: white;
+      padding: 5px; }
+  #classes ol {
+    padding-left: 15px;
+    padding-top: 20px; }
+
 /*# sourceMappingURL=style.css.map */
