@@ -80,10 +80,6 @@
     padding-bottom: 20px;
     padding-top: 20px;
 
-    img {
-      border-radius: 50%;
-    }
-
     .caption {
       text-align: center;
     }
@@ -108,6 +104,39 @@
   ol {
     padding-left: 15px;
     padding-top: 20px;
+  }
+}
+
+#daftar {
+  border-top: 3px solid orange;
+  padding: 50px 0;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -67px;
+
+    span {
+      background: white;
+      color: orange;
+      padding: 8px;
+    }
+  }
+
+  label {
+    display: block;
+  }
+
+  [id*="birthday-"] {
+    display: inline-block;
+    width: 30%;
+    margin-right: 15px;
+  }
+
+  button {
+    border-radius: 50px;
+    padding: 10px;
+    width: 100%;
   }
 }
 
