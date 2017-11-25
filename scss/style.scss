@@ -4,6 +4,7 @@
 .doss-nav {
   position: fixed;
   width: 100%;
+  z-index: 99;
 
   .main-logo {
     height: 100%;
@@ -56,5 +57,36 @@
   img {
     padding-right: 50px;
     width: 550px;
+  }
+}
+
+#instructors {
+  border-top: 3px solid orange;
+  padding: 50px 0;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -67px;
+
+
+    span {
+      background: white;
+      padding: 5px;
+    }
+  }
+
+  .thumbnail {
+    border: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    img {
+      border-radius: 50%;
+    }
+
+    .caption {
+      text-align: center;
+    }
   }
 }

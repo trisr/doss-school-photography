@@ -1,6 +1,7 @@
 .doss-nav {
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 99; }
   .doss-nav .main-logo {
     height: 100%; }
   .doss-nav .navbar-text {
@@ -38,5 +39,24 @@
   #reason img {
     padding-right: 50px;
     width: 550px; }
+
+#instructors {
+  border-top: 3px solid orange;
+  padding: 50px 0; }
+  #instructors h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -67px; }
+    #instructors h2 span {
+      background: white;
+      padding: 5px; }
+  #instructors .thumbnail {
+    border: none;
+    padding-bottom: 20px;
+    padding-top: 20px; }
+    #instructors .thumbnail img {
+      border-radius: 50%; }
+    #instructors .thumbnail .caption {
+      text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
