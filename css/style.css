@@ -30,4 +30,13 @@
       background: grey;
       color: white; }
 
+#reason {
+  padding: 50px 0; }
+  #reason h2 {
+    text-align: center;
+    text-transform: uppercase; }
+  #reason img {
+    padding-right: 50px;
+    width: 550px; }
+
 /*# sourceMappingURL=style.css.map */
