@@ -1,5 +1,10 @@
+@import 'fonts';
 @import 'variables';
 @import 'mixins';
+
+body {
+  font-family: 'Frutiger Condensed';
+}
 
 .doss-nav {
   position: fixed;
@@ -17,7 +22,7 @@
 
 #intro {
   height: 800px;
-  background: url('http://lorempixel.com/1024/800/city') no-repeat;
+  background: url('../images/classroom.jpg') no-repeat;
   background-size: cover;
   margin: 0;
 
@@ -28,19 +33,24 @@
     position: relative;
 
     h2 {
-      position: absolute;
+      font-family: 'Frutiger Bold';
+      position: relative;
       top: 45%;
-      left: 25%;
+
+      span {
+        font-family: 'Frutiger Condensed';
+      }
     }
 
     .btn {
+      font-family: 'Frutiger Bold';
       position: absolute;
       left: 44%;
       bottom: 5%;
       border-radius: 0;
       text-transform: uppercase;
       border: none;
-      background: grey;
+      background: $doss-grey;
       color: white;
     }
   }
@@ -50,8 +60,17 @@
   padding: 50px 0;
 
   h2 {
+    font-family: 'Frutiger Black Condensed';
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .media-body {
+    font-family: 'Frutiger Light';
+
+    h3 {
+      font-family: 'Frutiger Black Condensed';
+    }
   }
 
   img {
@@ -65,6 +84,7 @@
   padding: 50px 0;
 
   h2 {
+    font-family: 'Frutiger Black Condensed';
     text-align: center;
     text-transform: uppercase;
     margin-top: -67px;
@@ -81,16 +101,18 @@
     padding-top: 20px;
 
     .caption {
+      font-family: 'Frutiger Light';
       text-align: center;
     }
   }
 }
 
 #classes {
-  border-top: 3px solid orange;
+  border-top: 3px solid $doss-orange;
   padding: 50px 0;
 
   h2 {
+    font-family: 'Frutiger Black Condensed';
     text-align: center;
     text-transform: uppercase;
     margin-top: -67px;
@@ -104,26 +126,31 @@
   ol {
     padding-left: 15px;
     padding-top: 20px;
+
+    li {
+      font-family: 'Myriad Pro';
+    }
   }
 }
 
 #daftar {
-  border-top: 3px solid orange;
+  font-family: 'Frutiger Light';
+  border-top: 3px solid $doss-orange;
   padding: 50px 0;
 
   h2 {
     text-align: center;
-    text-transform: uppercase;
     margin-top: -67px;
 
     span {
       background: white;
-      color: orange;
+      color: $doss-orange;
       padding: 8px;
     }
   }
 
   label {
+    color: $doss-orange;
     display: block;
   }
 
@@ -134,6 +161,8 @@
   }
 
   button {
+    background: $doss-orange;
+    border: none;
     border-radius: 50px;
     padding: 10px;
     width: 100%;
@@ -141,13 +170,15 @@
 }
 
 #contact {
-  background: grey;
+  background: $doss-grey;
   color: white;
+  padding-bottom: 15px;
 
   .header {
-    border-bottom: 1px solid white;
+    border-bottom: 1px dotted rgb(80, 80, 80);
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
 
     ul {
       list-style: none;
@@ -164,16 +195,24 @@
   ul {
     padding-left: 15px;
   }
+
+  h4 {
+    border-bottom: 1px dotted rgb(80, 80, 80);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
 }
 
 #chat {
+  background: $doss-mild-orange;
+  color: white;
   position: fixed;
   right: 10%;
   bottom: 0;
 }
 
 footer {
-  background: orange;
+  background: $doss-orange;
   text-align: center;
   color: white;
   padding: 20px;
